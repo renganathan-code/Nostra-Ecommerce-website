@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.offer__bar{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    z-index: 10;
+    position: relative;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.navbar__s2 {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.sidebar{
+    background-color: #1E232E;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    width: 40%;
+    height: 100vh;
+    z-index: 11;
+    transform: translateX(-320px);
+    transition: 1s;
+    display: none;
+}
+
+.closebtn{
+    position: relative;
+    left: 170px;
+    bottom: 10px;
+    display: none;
+}
+
+.sidebar__menu{
+    display: none;
+}
+
+.sidebar__menu h2{
+   padding-top: 20px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   cursor: pointer;
+   border-bottom: solid white 1px;
+}
+
+.sidebar__menu h2:hover{
+    background-color: gainsboro;
+    color: black;
+    transition: 0.3s;
+}
+
+.sidebar__menu a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navbar-link{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.navbar-link:hover{
+    transform: scale(1.05);
+}
+
+
+.slider{
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slide__track{
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll{
+
+    from{translate: 0;}
+    to{translate: -100%;}
+}
+
+.brand__container__s1{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.brand__logo{
+    width: 5%;
+}
+
+.brand__logo img{
+    width: 100%;
+}
+
+.customer__container__s1{
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+.customer__container__s2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.customer__box{
+    background-color: #D2D2D2;
+    color: black;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.new__container__s1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.new__arrive{
+    position: relative;
+}
+
+.new__arrive p{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 80px;
+    bottom: 120px;
+    cursor: pointer;
+}
+
+
+.most__wanted__title{
+    text-align: center;
+    margin: 60px 0px 30px 0px;
+}
+
+.most__wanted__s1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.most__wanted{
+    width: 17%;
+    position: relative;
+}
+
+.most__wanted img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.most__wanted i{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 32px;
+}
+
+.most__wanted p{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    bottom: 70px;
+    cursor: pointer;
+}
+
+.offer__section{
+    background-color: #1E232E;
+    color: white;
+    padding: 30px;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 10px;
+}
+
+.offer__desc{
+    align-items: center;
+    padding: 10px;
+}
+
+.offer__desc p{
+    background-color: white;
+    width: 80px;
+    color: black;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.news__letter__inputbox{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    border: solid 2px black;
+}
+
+.subscribebtn{
+    background-color:#1E232E;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #1E232E;
+    color: white;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.footer__icons{
+    display: flex;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+/*collection Page*/
+
+.sidebar__filter{
+    display: none;
+}
+
+.sidebar__filter__s1{
+    background-color:#1E232E;
+    color: white;
+    width: 40%;
+    height: 170vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    z-index: 11;
+    transform: translateX(-310px);
+    transition: 1s;
+    display: none;
+}
+
+.sidebar__filter__s1 form{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-bottom: solid grey 1px;
+    display: none;
+}
+
+.closebtn1{
+    position: relative;
+    left: 170px;
+    bottom: 10px;
+}
+
+.Collection__container{
+    display: flex;
+}
+
+.Collection__container__s1{
+    width: 25%;
+    padding: 30px;
+}
+
+.Collection__container__s2{
+    border-left: black solid 3px;
+    width: 170%;
+}
+
+.search__bar{
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 20px 100px;
+}
+
+.search__bar input{
+    border: none;
+    outline: none;
+}
+
+.product__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Collection{
+    width: 17%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.Collection img{
+    width: 100%;
+}
+
+.addbtn{
+    background-color:#1E232E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.Collection:hover{
+    transform: scale(1.05);
+}
+
+
+/*Contact Page*/
+
+.contact__form{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-top: 3%;
+    padding-bottom: 100px;
+    border-radius: 20px;
+}
+
+.contact__form__s1 h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.contact__form__s1 p{
+    color: grey;
+    text-align: center;
+}
+
+.contact__form__s2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16%;
+    padding-top: 5%;
+}
+
+.contact__details{
+    margin-top: 40px;
+}
+
+.contact__details label{
+    margin-bottom: 10px;
+}
+
+.inputbox{
+    padding: 15px;
+    width: 70%;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/*Media Queries Home Page*/
+
+@media screen and (max-width:768px){
+
+    body{
+        font-size: 12px;
+    }
+
+    .navbar__s2{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: block;
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .sidebar__menu{
+        display: block;
+    }
+
+    .closebtn{
+        display: block;
+    }
+
+    .customer__container__s2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .new__container__s1{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .new__arrive{
+        width: 40%;
+    }
+
+    .new__arrive img{
+        width: 100%;
+    }
+
+    .new__arrive p{
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    }
+
+    .most__wanted{
+        width: 40%;
+    }
+
+    .most__wanted img{
+        width: 100%;
+    }
+
+    .most__wanted i{
+    position: absolute;
+    font-size: 24px;
+    }
+
+    .most__wanted p{
+    position: absolute;
+    left: 60px;
+    bottom: 50px;
+    }
+
+    .offer__img img{
+        width: 100%;
+    }
+
+    .offer__desc p{
+        width: 45%;
+    }
+}
+
+
+/*Media Queries Collection Page*/
+
+@media screen and (max-width:768px) {
+
+    .Collection__container__s1{
+        display: none;
+    }
+
+    .search__bar{
+    margin: 20px;
+    }
+
+    .sidebar__filter{
+        display: block;
+    }
+
+    .sidebar__filter__s1{
+        display: block;
+    }
+
+    .sidebar__filter__s1 form{
+        display: block;
+    }
+    
+    .Collection{
+    width: 20%;
+    }
+
+    .Collection__container__s2{
+        border: none;
+    }    
+}

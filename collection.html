@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+        <!--Add Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!---Link My Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-----Link CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!--Offer bar-->
+    <div class="offer__bar">
+        <h3>SignUp and GET 20% OFF on your first order</h3>
+        <h2 class="cancelbtn" style="cursor: pointer;">x</h2>
+    </div>
+
+    <!---------Navbar----->
+
+    <nav class="navbar">
+        <div class="navbar__s1">
+            <h1>Nostra</h1>
+        </div>
+
+        <div class="navbar__s2">
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="collection.html">Collections</a>
+            <a class="navbar-link" href="contact.html">Contact</a>
+        </div>
+
+        <div class="navbar-menu">
+            <i class="fa-solid fa-list" style="color: #00060f;"></i>
+        </div>
+
+        <div class="sidebar">
+            <h1 class="closebtn" style="cursor: pointer;">x</h1>
+            <div class="sidebar__menu">
+                <a href="index.html"><h2> Home</h2></a>
+                <a href="#"><h2>New Arrivals</h2></a>
+                <a href="#"><h2>Most Wanted</h2></a>
+                <a href="collection.html"><h2>Collections</h2></a>
+                <a href="contact.html"><h2>Contact</h2></a>
+                <h2 id="filters">Filters</h2>
+            </div>
+        </div>
+
+    </nav>
+
+    <!----Collections---->
+
+    <div class="sidebar__filter">
+        <div class="sidebar__filter__s1">
+            <h1 class="closebtn1" style="cursor: pointer;">x</h1>
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Occasion</h1>
+                <input type="checkbox"name="occasion" value="summer">   Summer <br>
+                <input type="checkbox"name="occasion" value="party">   Party <br>
+                <input type="checkbox"name="occasion" value="beach">   Beach
+            </form>
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Colors</h1>
+                <input type="checkbox"name="Colors" value="black">   Black <br>
+                <input type="checkbox"name="Colors" value="blue">   Blue <br>
+                <input type="checkbox"name="Colors" value="red">   Red <br>
+                <input type="checkbox"name="Colors" value="Violet">   Violet
+            </form>
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Price</h1>
+                <input type="checkbox"name="price" value="500below">   500-Below <br>
+                <input type="checkbox"name="price" value="500-999">   500-999 <br>
+                <input type="checkbox"name="price" value="1000-1999">   1000-1999 <br>
+                <input type="checkbox"name="price" value="2000-3999">   2000-3999 <br>
+                <input type="checkbox"name="price" value="4000-Above">   4000-Above
+            </form>
+
+        </div>
+    </div>
+
+    <section class="Collection__container">
+
+        <div class="Collection__container__s1">
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Occasion</h1>
+                <input type="checkbox"name="occasion" value="summer">   Summer <br>
+                <input type="checkbox"name="occasion" value="party">   Party <br>
+                <input type="checkbox"name="occasion" value="beach">   Beach
+            </form>
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Colors</h1>
+                <input type="checkbox"name="Colors" value="black">   Black <br>
+                <input type="checkbox"name="Colors" value="blue">   Blue <br>
+                <input type="checkbox"name="Colors" value="red">   Red <br>
+                <input type="checkbox"name="Colors" value="Violet">   Violet
+            </form>
+
+            <form>
+                <h1 style="padding:15px 0px 5px 0px;">Price</h1>
+                <input type="checkbox"name="price" value="500below">   500-Below <br>
+                <input type="checkbox"name="price" value="500-999">   500-999 <br>
+                <input type="checkbox"name="price" value="1000-1999">   1000-1999 <br>
+                <input type="checkbox"name="price" value="2000-3999">   2000-3999 <br>
+                <input type="checkbox"name="price" value="4000-Above">   4000-Above
+            </form>
+
+        </div>
+
+
+        <div class="Collection__container__s2">
+
+            <div class="search__bar">
+                <i class="fa-solid fa-magnifying-glass" style="color: #010a19;"></i>
+                <input type="text" placeholder="Seacrch for Anything">
+            </div>
+
+            <div class="product__container">
+                <div class="Collection">
+                    <img src="./images/products/n1.jpg" alt="Collection image">
+                    <h3>Linen Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n2.jpg" alt="Collection image">
+                    <h3>Formal Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n3.jpg" alt="Collection image">
+                    <h3>Linen Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n4.jpg" alt="Collection image">
+                    <h3>Casual Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n5.jpg" alt="Collection image">
+                    <h3>Formal Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n6.jpg" alt="Collection image">
+                    <h3>Track</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n7.jpg" alt="Collection image">
+                    <h3>Linen Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/n8.jpg" alt="Collection image">
+                    <h3>Linen Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f1.jpg" alt="Collection image">
+                    <h3>Printed Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f2.jpg" alt="Collection image">
+                    <h3>Printed Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f3.jpg" alt="Collection image">
+                    <h3>Beach Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f4.jpg" alt="Collection image">
+                    <h3>Printed Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f5.jpg" alt="Collection image">
+                    <h3>Beach Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f6.jpg" alt="Collection image">
+                    <h3>Casual Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f7.jpg" alt="Collection image">
+                    <h3>Casual Pant</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+                <div class="Collection">
+                    <img src="./images/products/f8.jpg" alt="Collection image">
+                    <h3>T-Shirt</h3>
+                    <p>$499 <del>1499</del></p>
+                    <button class="addbtn">Add</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-----Footer-->
+
+    <div class="footer">
+        <h1 style="padding-bottom: 10px;">Nostra</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, dicta!</p>
+            <div class="footer__icons">
+                <i class="fa-brands fa-facebook" style="color: #ffffff" ></i>
+                <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            </div>
+            <p>@ 2021 nostra.com </p>
+    </div>
+
+
+    <!--Link script file----->
+    <script src="script.js"></script>
+
+</body>
+</html>
