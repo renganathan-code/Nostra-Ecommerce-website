@@ -1,12 +1,3 @@
-
-//selecting navbar offer tag,Cancelbtn
-const offerBar = document.querySelector(".offer__bar")
-const cancelBtn = document.getElementById("cancelbtn")
-
-cancelBtn.addEventListener("click",function(){
-    offerBar.style.display = "none"
-})
-
 //Selecting Sidebar,menu tag
 const menu = document.querySelector(".navbar-menu")
 const sideBar = document.querySelector(".sidebar")
