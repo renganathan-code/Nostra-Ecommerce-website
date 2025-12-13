@@ -109,19 +109,17 @@ body{
 /*Slider*/
 
 .slider{
-    overflow: auto;
+    overflow-x: auto;
     display: flex;
     width: 100%;
     position: relative;
-    margin: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
 }
 
 .slide--leftbtn{
     position: absolute;
     top: 35%;
-    left: 26%;
+    left: 19%;
 }
 
 .slide--leftbtn i{
@@ -133,16 +131,16 @@ body{
     text-align: center;
     position: absolute;
     color: white;
-    left: 30%;
+    left: 25%;
     top: 30%;
 }
 
 .slide__content h1{
-    font-size: 64px;
+    font-size: 4vw;
 }
 
 .slide__content h4{
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 .slide__content button{
@@ -158,14 +156,18 @@ body{
     display: flex;
 }
 
-.slide__images{
+.slide--image{
     width: 100vw;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
 }
 
 .slide--rightbtn{
     position: absolute;
     top: 35%;
-    right: 22%;
+    right: 18%;
 }
 
 .slide--rightbtn i{
@@ -519,6 +521,26 @@ body{
 
     .closebtn{
         display: block;
+    }
+
+    .slide--leftbtn{
+        position: absolute;
+        top: 32%;
+        left: 17%;
+    }
+
+    .slide--leftbtn i{
+        font-size: 6vw;
+    }
+
+    .slide--rightbtn{
+        position: absolute;
+        top: 32%;
+        right: 16%;
+    }
+    
+    .slide--rightbtn i{
+        font-size: 6vw;
     }
 
     .brand__logo{
